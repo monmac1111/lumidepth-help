@@ -1,0 +1,30 @@
+site_name: Lumidepth Player VR
+site_description: 手持ちの VR 動画に、AI で奥行きを足して見る PC VR プレイヤー
+site_url: https://monmac1111.github.io/lumidepth-help/
+repo_url: https://github.com/monmac1111/lumidepth-help
+theme:
+  name: material
+  language: ja
+  logo: icon.png
+  favicon: icon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: light blue
+      toggle: { icon: material/weather-night, name: ダークモードへ }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle: { icon: material/weather-sunny, name: ライトモードへ }
+  features: [navigation.sections, navigation.top]
+nav:
+  - Lumidepth Player VR: index.md
+  - 日本語:
+      - ヘルプ: ja/help.md
+      - プライバシーポリシー: ja/privacy.md
+  - English:
+      - Help: en/help.md
+      - Privacy Policy: en/privacy.md
+markdown_extensions: [admonition, tables, attr_list]
