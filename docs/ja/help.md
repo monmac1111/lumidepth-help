@@ -7,7 +7,9 @@
 - Windows 10 / 11（64 ビット）
 - NVIDIA GeForce RTX 3060 以降（RTX 30・40・50 シリーズ）
 - Meta Quest シリーズを Meta Quest Link（ケーブル）または Air Link で PC につないで使用
-- 動画: MP4・MKV・MOV・WebM。H.265（HEVC）・H.264（4K まで）・AV1・VP9
+- 動画: MP4・MKV・MOV・WebM。H.265（HEVC）・H.264（4K まで）・AV1・VP9・ProRes
+- 8〜12 ビット、4:2:0・4:2:2・4:4:4、HDR（HDR10・HLG）。HDR は SDR に直して表示します
+- 4:2:2 と ProRes は、RTX 30・40 シリーズでは CPU で復号します。8K 60fps は追いつかないことがあります（RTX 50 シリーズは GPU で復号）
 
 ## 始め方
 

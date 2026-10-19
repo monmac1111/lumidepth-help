@@ -7,7 +7,9 @@
 - Windows 10 / 11 (64-bit)
 - NVIDIA GeForce RTX 3060 or newer (RTX 30 / 40 / 50 series)
 - Meta Quest headset connected via Meta Quest Link (cable) or Air Link
-- Video: MP4, MKV, MOV, WebM. H.265 (HEVC), H.264 (up to 4K), AV1, VP9
+- Video: MP4, MKV, MOV, WebM. H.265 (HEVC), H.264 (up to 4K), AV1, VP9, ProRes
+- 8 to 12-bit, 4:2:0 / 4:2:2 / 4:4:4, HDR (HDR10, HLG). HDR videos are shown as SDR
+- On RTX 30 / 40 series, 4:2:2 and ProRes are decoded on the CPU, so 8K 60 fps may not keep up (RTX 50 series decodes them on the GPU)
 
 ## Getting started
 
