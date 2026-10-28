@@ -3,6 +3,7 @@
 **Lumidepth Player VR**
 
 - Data di entrata in vigore: 19 ottobre 2026
+- Ultimo aggiornamento: 28 ottobre 2026 (aggiunti i server della rete domestica)
 - Fornitore: mon neural
 - Contatti: [hello@monneural.dev](mailto:hello@monneural.dev)
 
@@ -16,7 +17,7 @@ Non raccogliamo alcuna informazione personale, dato di utilizzo o contenuto vide
 
 I seguenti dati vengono salvati solo sul tuo PC e non vengono mai inviati altrove:
 
-- Impostazioni (opzioni di visualizzazione e 3D)
+- Impostazioni (opzioni di visualizzazione e 3D, e indirizzi delle cartelle condivise e dei server che registri)
 - Log diagnostici (non contengono nomi né percorsi dei file video)
 - Dati del modello di profondità IA ottimizzati per la tua GPU
 - Immagini di anteprima mostrate nella libreria video
@@ -29,7 +30,15 @@ L'app è distribuita tramite lo store Meta e utilizza la piattaforma Meta per ve
 
 ## 4. Rete
 
-Oltre alla verifica dell'acquisto, l'app accede solo alle unità e alle cartelle condivise che apri tu stesso (ad esempio un NAS sulla tua rete domestica).
+Oltre alla verifica dell'acquisto, l'app si collega solo a:
+
+- Unità e cartelle condivise che apri tu stesso (ad esempio un NAS nella tua rete domestica)
+- Server che registri tu stesso (WebDAV, Jellyfin)
+- Server multimediali (DLNA) trovati nella tua rete domestica. Per trovarli, l'app invia una richiesta di rilevamento (SSDP) nella tua rete domestica.
+
+I nomi utente e le password dei server vengono letti da quanto hai salvato in Gestione credenziali di Windows. L'app non li memorizza e non li scrive mai nei log.
+
+L'app si identifica presso i server Jellyfin con un ID di questo PC, così il server non mostra ogni volta un nuovo dispositivo. L'ID è un hash ricavato dall'ID del computer Windows; l'ID del computer non viene inviato.
 
 ## 5. Minori
 

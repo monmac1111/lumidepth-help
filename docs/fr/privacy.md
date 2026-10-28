@@ -3,6 +3,7 @@
 **Lumidepth Player VR**
 
 - Date d'entrée en vigueur : 19 octobre 2026
+- Dernière mise à jour : 28 octobre 2026 (ajout des serveurs du réseau domestique)
 - Fournisseur : mon neural
 - Contact : [hello@monneural.dev](mailto:hello@monneural.dev)
 
@@ -16,7 +17,7 @@ Nous ne collectons aucune information personnelle, aucune donnée d'utilisation 
 
 Les données suivantes sont enregistrées uniquement sur votre PC et ne sont jamais envoyées nulle part :
 
-- Réglages (options d'affichage et de 3D)
+- Réglages (options d'affichage et de 3D, et adresses des dossiers partagés et serveurs que vous ajoutez)
 - Journaux de diagnostic (ils ne contiennent ni le nom ni l'emplacement des fichiers vidéo)
 - Données du modèle de profondeur IA optimisées pour votre GPU
 - Miniatures affichées dans la liste des vidéos
@@ -29,7 +30,15 @@ L'application est distribuée via la boutique Meta et utilise la plateforme Meta
 
 ## 4. Réseau
 
-En dehors de la vérification de l'achat, l'application accède uniquement aux lecteurs et aux dossiers partagés que vous ouvrez vous-même (par exemple un NAS sur votre réseau domestique).
+En dehors de la vérification d'achat, l'application se connecte uniquement :
+
+- aux lecteurs et dossiers partagés que vous ouvrez vous-même (par exemple un NAS sur votre réseau domestique) ;
+- aux serveurs que vous ajoutez vous-même (WebDAV, Jellyfin) ;
+- aux serveurs multimédias (DLNA) trouvés sur votre réseau domestique. Pour les trouver, l'application envoie une requête de découverte (SSDP) sur votre réseau domestique.
+
+Les noms d'utilisateur et mots de passe des serveurs sont lus depuis ce que vous avez enregistré dans le Gestionnaire d'identification Windows. L'application ne les enregistre pas et ne les écrit jamais dans les journaux.
+
+L'application s'identifie auprès des serveurs Jellyfin avec un identifiant de ce PC, pour que le serveur n'affiche pas un nouvel appareil à chaque fois. Cet identifiant est un hachage dérivé de l'identifiant de l'ordinateur Windows ; l'identifiant de l'ordinateur lui-même n'est pas envoyé.
 
 ## 5. Enfants
 
