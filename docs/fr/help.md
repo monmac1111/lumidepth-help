@@ -10,12 +10,13 @@
 - Vidéo : MP4, MKV, MOV, WebM. H.265 (HEVC), H.264 (jusqu'à 4K), AV1, VP9, ProRes
 - 8 à 12 bits, 4:2:0 / 4:2:2 / 4:4:4, HDR (HDR10, HLG). Les vidéos HDR sont affichées en SDR
 - Sur les RTX séries 30 / 40, le 4:2:2 et le ProRes sont décodés par le processeur : la lecture en 8K 60 i/s peut ne pas suivre (les RTX série 50 les décodent sur le GPU)
+- Films 3D : côte à côte, 3D séquentielle, vidéo spatiale (MV-HEVC) et Blu-ray 3D (MVC en MKV). Ils sont détectés automatiquement et affichés en 3D sur un écran devant vous. Le Blu-ray 3D est décodé par le processeur (processeur avec AVX2 requis, sinon lecture en 2D)
 
 ## Premiers pas
 
 1. Lancez l'application Meta Quest Link sur votre PC et connectez votre Quest avec Link ou Air Link.
 2. Ouvrez Lumidepth Player VR depuis la Bibliothèque de votre Quest.
-3. Les lecteurs de votre PC apparaissent dans la liste. Pour parcourir un dossier partagé sur un NAS, connectez-le comme lecteur réseau dans Windows.
+3. Les lecteurs de votre PC apparaissent dans la liste. Pour parcourir un dossier partagé sur un NAS, connectez-le comme lecteur réseau dans Windows. Pour un serveur multimédia (DLNA) de votre réseau domestique, choisissez « Serveurs multimédias (DLNA) » dans la liste.
 4. Sélectionnez une vidéo avec la gâchette droite pour lancer la lecture. La première fois que vous utilisez la 3D, l'IA est préparée pour votre PC, ce qui peut prendre quelques minutes (c'est ensuite instantané).
 
 ## Commandes

@@ -10,12 +10,13 @@
 - 影片：MP4、MKV、MOV、WebM。H.265（HEVC）、H.264（最高 4K）、AV1、VP9、ProRes
 - 8 至 12 位元，4:2:0 / 4:2:2 / 4:4:4，HDR（HDR10、HLG）。HDR 影片會以 SDR 顯示
 - 在 RTX 30 / 40 系列上，4:2:2 與 ProRes 由 CPU 解碼，因此 8K 60 fps 可能會跟不上（RTX 50 系列由 GPU 解碼）
+- 3D 電影：左右並排、畫面循序 3D、空間影片（MV-HEVC）與藍光 3D（MKV 格式的 MVC）。會自動辨識，並以 3D 顯示在您面前的螢幕上。藍光 3D 由 CPU 解碼（需要支援 AVX2 的 CPU，否則以 2D 播放）
 
 ## 開始使用
 
 1. 在 PC 上啟動 Meta Quest Link 應用程式，並透過 Link 或 Air Link 連線 Quest。
 2. 在 Quest 的應用程式庫中啟動 Lumidepth Player VR。
-3. 列表中會顯示 PC 的磁碟機。若要瀏覽 NAS 的共用資料夾，請先在 Windows 中將其對應為網路磁碟機。
+3. 列表中會顯示 PC 的磁碟機。若要瀏覽 NAS 的共用資料夾，請先在 Windows 中將其對應為網路磁碟機。若要播放家用網路中的媒體伺服器（DLNA），請在列表中選擇「媒體伺服器（DLNA）」。
 4. 用右扳機選擇影片即可開始播放。首次使用 3D 時，系統會針對您的 PC 準備 AI，可能需要幾分鐘（之後即可立即使用）。
 
 ## 操作方式
